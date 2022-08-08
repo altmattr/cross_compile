@@ -1,0 +1,7 @@
+tasks:
+  - name: "cross compile toolchain"
+    command: |
+      wget https://developer-archives.toradex.com/files/toradex-dev/uploads/media/Colibri/Linux/SDKs/2.8/colibri-imx6ull/console-tdx-image/angstrom-glibc-x86_64-armv7at2hf-neon-v2017.12-toolchain.sh
+      chmod a+x angstrom-glibc-x86_64-armv7at2hf-neon-v2017.12-toolchain.sh 
+      ./angstrom-glibc-x86_64-armv7at2hf-neon-v2017.12-toolchain.sh 
+      . /usr/local/oecore-x86_64/environment-setup-armv7at2hf-neon-angstrom-linux-gnueabi
